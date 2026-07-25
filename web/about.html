@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Fahad</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header{
+            background: #111;
+            padding: 20px 8%;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        nav ul li a:hover{
+            color: orange;
+        }
+
+        /* About Section */
+        .about{
+            flex: 1;
+            padding: 80px 10%;
+            text-align: center;
+            background:rgb(122, 196, 196);
+            background-size: cover;
+            background-position: center;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about h2{
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .about p{
+            max-width: 800px;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer{
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer-links{
+            margin-bottom: 15px;
+        }
+
+        .footer-links a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover{
+            color: orange;
+        }
+
+        .copyright{
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media(max-width:600px){
+
+            nav{
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul{
+                gap: 15px;
+            }
+
+            .about h2{
+                font-size: 32px;
+            }
+
+            .about p{
+                font-size: 16px;
+            }
+
+            .footer-links a{
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Fahad</div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is <strong>Fahad</strong>. I am a passionate
+            Front-End Web Developer who loves creating clean, modern and
+            responsive websites using HTML, CSS and JavaScript.
+        </p>
+
+        <p>
+            I enjoy learning new technologies and improving my skills to build
+            attractive and user-friendly web applications.
+        </p>
+    </section>
+
+    <footer>
+<p class="copyright">
+© 2026 Fahad. All Rights Reserved.
+</p>
+</footer>
+
+</body>
+</html>
